@@ -34,6 +34,5 @@ public class Solution {
     public static void main(String[] args) {
     	System.out.println(repeatedSubstringPattern("abab"));
     	String ss = "sssss";
-    	ss.indexOf(ch)("aaa");
     }
 }
