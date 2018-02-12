@@ -16,12 +16,6 @@ import java.util.Arrays;
 public class QuikSort{
 	public static void main(String[] args)
 	{
-		Integer i=null;
-		a a = new a();
-		if(a.getAa() != null){
-			System.out.println("qwew");
-		}
-		System.out.println("qwew1");
 		QuikSort quikSort = new QuikSort();
 		int arr[] = {7,8,1,5,4,3,9,54,2,578,25,36,14,47,58,69,36,26,85,95,15,96,47,12};
 		System.out.println(arr.length);
@@ -64,16 +58,5 @@ public class QuikSort{
 			sort(arr, low, l - 1);
 		if (h < high)
 			sort(arr, l + 1, high);
-	}
-}
-class a {
-	private Integer aa;
-
-	public Integer getAa() {
-		return aa;
-	}
-
-	public void setAa(Integer aa) {
-		this.aa = aa;
 	}
 }

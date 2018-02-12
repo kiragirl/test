@@ -17,7 +17,7 @@ public class Stock{
 	private int quantity = 10;
 
 	public void buy() {
-		System.out.println("Stock [ Name: " + name + ", Quantity: " + quantity + " ] bought");
+		System.out.println("Stock [ Name: " + name + ", Quantity: " + quantity + " ] bought  1");
 	}
 
 	public void sell() {
