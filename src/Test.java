@@ -17,10 +17,10 @@ import java.util.List;
  **/
 public class Test{
 	 public static void main(String[] args) {
-	       /* P b = new B();
-	        System.out.println(b.a);*/
-		 Test test = new Test();
-		 System.out.println(test.testTryCatchFinally().a);
+	        P b = new B();
+	        System.out.println(b.a);
+		 /*Test test = new Test();
+		 System.out.println(test.testTryCatchFinally().a);*/
 	    }
 	    static class P {
 	        public int a = 11;
