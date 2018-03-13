@@ -30,3 +30,6 @@ http://www.runoob.com/design-pattern/visitor-pattern.html
 VisitorPatternDemo，我们的演示类使用 Computer、ComputerPartVisitor 类来演示访问者模式的用法。
 
 个人思考：访问者模式的核心在于Visitor，通过接口可以创造不同的Visitor（所谓的算法经常变化）。用Visitor的实现去遍历所有元素或者说所有元素根据Visitor的实现得到结果。这样达到灵活的配置算法的结果。
+update by liyiming 20180313 
+访问者无法决定看什么 看什么由被访问者决定
+而访问者 决定看到之后的事

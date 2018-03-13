@@ -28,7 +28,7 @@ public class CommandPatternDemo{
 		Broker broker = new Broker();
 		broker.takeOrder(buyStockOrder);
 		broker.takeOrder(sellStockOrder);
-
+ 
 		broker.placeOrders();
 
 	}
