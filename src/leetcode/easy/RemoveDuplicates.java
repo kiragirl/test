@@ -55,7 +55,7 @@ public class RemoveDuplicates{
 	 * 删除排序数组中的重复项 参考答案
 	 * @author:liyiming
 	 * @date:2018年5月7日
-	 * @Description:
+	 * @Description:0, 0, 1, 1, 1, 2, 2, 3, 3, 4
 	 * @param nums
 	 * @return
 	 */
