@@ -5,14 +5,12 @@
 **/
 package leetcode.easy;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
-import java.util.List;
 import java.util.Queue;
 
 /**
- * Title: IsSymmetric Description: Company:pusense
- * 理解为有两组二叉树 
+ * Title: IsSymmetric Description: Company:pusense 理解为有两组二叉树
+ * 
  * @author ：lyiming
  * @date ：2018年5月8日
  **/
@@ -45,6 +43,7 @@ public class IsSymmetric{
 
 	/**
 	 * 对称二叉树
+	 * 
 	 * @author:liyiming
 	 * @date:2018年5月9日
 	 * @Description:
@@ -95,11 +94,13 @@ public class IsSymmetric{
 		}
 		return trs;
 	}
+
 	/**
 	 * Recursive
+	 * 
 	 * @author:liyiming
 	 * @date:2018年5月9日
-	 * @Description:理解为有两组二叉树 
+	 * @Description:理解为有两组二叉树
 	 * @param root
 	 * @return
 	 */
@@ -114,29 +115,34 @@ public class IsSymmetric{
 			return false;
 		return (t1.val == t2.val) && isMirror(t1.right, t2.left) && isMirror(t1.left, t2.right);
 	}
+
 	/**
 	 * Iterative
+	 * 
 	 * @author:liyiming
 	 * @date:2018年5月9日
-	 * @Description:理解为有两组二叉树 
+	 * @Description:理解为有两组二叉树
 	 * @param root
 	 * @return
 	 */
 	public boolean isSymmetric3(TreeNode root) {
-	    Queue<TreeNode> q = new LinkedList<>();
-	    q.add(root);
-	    q.add(root);
-	    while (!q.isEmpty()) {
-	        TreeNode t1 = q.poll();
-	        TreeNode t2 = q.poll();
-	        if (t1 == null && t2 == null) continue;
-	        if (t1 == null || t2 == null) return false;
-	        if (t1.val != t2.val) return false;
-	        q.add(t1.left);
-	        q.add(t2.right);
-	        q.add(t1.right);
-	        q.add(t2.left);
-	    }
-	    return true;
+		Queue<TreeNode> q = new LinkedList<>();
+		q.add(root);
+		q.add(root);
+		while (!q.isEmpty()) {
+			TreeNode t1 = q.poll();
+			TreeNode t2 = q.poll();
+			if (t1 == null && t2 == null)
+				continue;
+			if (t1 == null || t2 == null)
+				return false;
+			if (t1.val != t2.val)
+				return false;
+			q.add(t1.left);
+			q.add(t2.right);
+			q.add(t1.right);
+			q.add(t2.left);
+		}
+		return true;
 	}
 }
