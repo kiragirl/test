@@ -44,11 +44,11 @@ public class HouseRobber{
 	 */
 	public static void main(String[] args) {
 		// int nums[] = new int[]{6, 1, 3, 2, 4, 7};
-		//int nums[] = new int[]{1,2,3,1};
-		//int nums[] = new int[]{2, 7, 9, 3, 1};
-		//int nums[] = new int[]{1,1,1,1};
-		//[1,3,1,3,100]
-		int nums[] = new int[]{1,3,1,3,100};
+		// int nums[] = new int[]{1,2,3,1};
+		// int nums[] = new int[]{2, 7, 9, 3, 1};
+		// int nums[] = new int[]{1,1,1,1};
+		// [1,3,1,3,100]
+		int nums[] = new int[]{1, 3, 1, 3, 100};
 		System.out.println(rob(nums));
 	}
 
@@ -69,6 +69,9 @@ public class HouseRobber{
 				b = b + nums[i + 1] > b1 ? b + nums[i + 1] : b1;
 			} else {
 				a = a + nums[i];
+				if (a < b) {
+					a = b;
+				}
 				b = b + nums[i + 1];
 			}
 			i = i + 2;
@@ -77,5 +80,15 @@ public class HouseRobber{
 			a = a + nums[nums.length - 1];
 		}
 		return a >= b ? a : b;
+	}
+
+	public int rob2(int[] nums) {
+		int prev = 0, curr = 0;
+		for (int n : nums) {
+			int tmp = curr;
+			curr = Math.max(prev + n, curr);
+			prev = tmp;
+		}
+		return curr;
 	}
 }
