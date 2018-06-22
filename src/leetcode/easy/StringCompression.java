@@ -5,6 +5,8 @@
 **/
 package leetcode.easy;
 
+import java.util.Arrays;
+
 /**
  * Title: StringCompression Description:给定一组字符，使用原地算法将其压缩。
  * 
@@ -63,11 +65,62 @@ public class StringCompression{
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// char[] chars = new char[]{'a', 'a', 'b', 'b', 'c', 'c', 'c'};
+		 // char[] chars = new char[]{'a', 'a', 'a', 'b'};
+		// char[] chars = new char[]{'a', 'a', 'b', 'b', 'c', 'c', 'c', 'c','c', 'c', 'c', 'c', 'c', 'c', 'c', 'c'};
+		 //char[] chars = new char[]{'6', 'E', '<', '`', '|', 'v', 'p', 'k',':', 'E'};
+		char[] chars = new char[]{'a', 'a', 'a', 'b', 'b', 'a', 'a'};
+		// char[] chars = new char[]{'a'};
+		StringCompression sc = new StringCompression();
+		// System.out.println(sc.compress(chars) + ",chars:" +
+		// String.valueOf(chars));
+		System.out.println(sc.compress2(chars) + ",chars:" + String.valueOf(chars));
+	}
 
+	public int compress2(char[] chars) {
+		int k = 0;
+		for (int i = 0; i < chars.length;) {
+			char c = chars[i];
+			int n = i + 1;
+			while (n < chars.length && chars[n] == c) {
+				n++;
+			}
+			int a = n - i;
+			chars[k] = c;
+			if (a > 1) {
+				String b = String.valueOf(a);
+				char[] d = b.toCharArray();
+				for (int j = 0; j < d.length; j++) {
+					chars[k + j + 1] = d[j];
+				}
+				k += d.length;
+			}
+			k++;
+			i += a;
+		}
+		return k;
 	}
 
 	public int compress(char[] chars) {
-		return 0;
+		int[] count = new int[128];
+		for (char c : chars) {
+			count[c]++;
+		}
+		int k = 0;
+		for (int i = 0; i < chars.length;) {
+			char c = chars[i];
+			int a = count[c];
+			String b = String.valueOf(a);
+			char[] d = b.toCharArray();
+			if (a > 1) {
+				for (int j = 0; j < d.length; j++) {
+					chars[k + j + 1] = d[j];
+				}
+				k++;
+			}
+			k += d.length;
+			i += a;
+		}
+		return k;
 	}
 }
