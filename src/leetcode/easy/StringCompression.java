@@ -5,7 +5,6 @@
 **/
 package leetcode.easy;
 
-import java.util.Arrays;
 
 /**
  * Title: StringCompression Description:给定一组字符，使用原地算法将其压缩。
