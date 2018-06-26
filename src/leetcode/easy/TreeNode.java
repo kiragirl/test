@@ -30,7 +30,7 @@ public class TreeNode{
 	@Override
 	public String toString() {
 		int depth = getBinaryTreeDepth();
-		System.out.println(depth);
+		//System.out.println(depth);
 		return toStringRecursion(this);
 	}
 	
@@ -38,7 +38,7 @@ public class TreeNode{
 		if(null == node) {
 			return "";
 		}
-		String ss = ""+toStringRecursion(node.left)+""+node.val+""+toStringRecursion(node.right);
+		String ss = "{"+toStringRecursion(node.left)+"{"+node.val+"}"+toStringRecursion(node.right)+"}";
 		return ss;
 	}
 	/**
