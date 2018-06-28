@@ -36,7 +36,7 @@ public class TreeNode{
 	
 	private String toStringRecursion(TreeNode node) {
 		if(null == node) {
-			return "";
+			return "null";
 		}
 		String ss = "{"+toStringRecursion(node.left)+"{"+node.val+"}"+toStringRecursion(node.right)+"}";
 		return ss;
