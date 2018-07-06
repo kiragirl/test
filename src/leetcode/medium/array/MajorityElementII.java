@@ -3,7 +3,7 @@
 * @date:2018年7月6日
 * Description:
 **/
-package leetcode.medium;
+package leetcode.medium.array;
 
 import java.util.ArrayList;
 import java.util.HashMap;

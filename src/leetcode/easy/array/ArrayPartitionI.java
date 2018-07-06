@@ -3,7 +3,7 @@
 * @date:2018年6月27日
 * Description:
 **/
-package leetcode.easy;
+package leetcode.easy.array;
 
 import java.util.Arrays;
 
