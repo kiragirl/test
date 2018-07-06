@@ -3,7 +3,7 @@
 * @date:2018年7月5日
 * Description:
 **/
-package leetcode.medium;
+package leetcode.medium.linkedList;
 
 
 /**
