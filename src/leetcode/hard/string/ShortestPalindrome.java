@@ -31,14 +31,26 @@ public class ShortestPalindrome{
 	 */
 	public static void main(String[] args) {
 		ShortestPalindrome sp = new ShortestPalindrome();
-		 String s = "aacecaaa";
-		 //String s = "abcd";
+		// String s = "aacecaaa";
+		String s = "abababca";
+		// String s = "abcd";
 		System.out.println(sp.shortestPalindrome2(s));
 	}
 
+	/**
+	 * 利用后缀与前缀最大匹配PMT（Partial Match Table） 找出公共最大匹配长度 则原字符串剩余长度为需要额外添加的长度
+	 * 将末尾字符截取反转
+	 * 
+	 * @author:liyiming
+	 * @date:2018年7月10日
+	 * @Description:
+	 * @param s
+	 * @return
+	 */
 	public String shortestPalindrome2(String s) {
 		String tmp = s + "#" + new StringBuilder(s).reverse().toString();
 		int[] table = getTable(tmp);
+		System.out.println(table[table.length - 1]);
 		return new StringBuilder(s.substring(table[table.length - 1])).reverse().toString() + s;
 
 	}
