@@ -27,7 +27,7 @@ public class NumberOf1Bits{
 	/**
 	 * @author:liyiming
 	 * @date:2018年5月15日
-	 * @Description:位与运算符（&）运算规则：两个数都转为二进制，然后从高位开始比较，如果两个数都为1则为1，否则为0
+	 * @Description:位与运算符（&）运算规则                                  ：两个数都转为二进制，然后从高位开始比较，如果两个数都为1则为1，否则为0
 	 * @param args
 	 */
 	public static void main(String[] args) {
