@@ -5,7 +5,8 @@
 **/
 package algorithm;
 
-import java.util.ArrayList;import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -28,81 +29,88 @@ public class StringPermute{
 	 */
 	public static void main(String[] args) {
 		StringPermute sp = new StringPermute();
-		String str = "bcd";
+		String str = "abcda";
 		Long l = System.currentTimeMillis();
+		sp.permuteByLoop(str);
+		// sp.permuteByLoop(str);
+		System.out.println(System.currentTimeMillis() - l);
+		Long l2 = System.currentTimeMillis();
 		sp.permute(str);
-		//sp.permuteByLoop(str);
-		System.out.println(System.currentTimeMillis()-l);
+		// sp.permuteByLoop(str);
+		System.out.println(System.currentTimeMillis() - l2);
 	}
 
 	public void permute(String str) {
-		char[] strc = str.toCharArray();
-		char[] strs = new char[] {strc[0]};
-		for(int i=1;i<strc.length;i++) {
-			List<char[]> list = permute2(strs, strc[i]);
-		}
-		
-		//permute(strc, 0, str.length());
+		char[] ch = str.toCharArray();
+		permute(ch, 0, ch.length - 1);
 	}
 
 	private void permute(char[] str, int low, int high) {
-
-
-	}
-	
-	//
-	private List<char[]> permute2(char[] str,char s) {
-		/*for() {
-			
-		}*/
-		List<char[]> list = new ArrayList<>();
-		int length = str.length+1;
-		for(int i=0;i<length;i++) {
-			char[] strs = new char[length];
-			strs[i]=s;
-			int k=0;
-			for(int j=0;j<length;j++) {
-				if(j!=i) {
-					strs[j]=str[k];
-					k++;
-				}
+		int length = str.length;
+		if (low == high) {
+			String s = "";
+			for (int i = 0; i < length; i++) {
+				s += str[i];
 			}
-			list.add(strs);
+			System.out.println(s);
 		}
-		System.out.println(list);
-		return list;
+		for (int i = low; i < length; i++) {
+			swap(str, i, low);
+			permute(str, low + 1, high);
+			swap(str, i, low);
+		}
 	}
+
+	public void swap(char[] str, int m, int n) {
+		char temp = str[m];
+		str[m] = str[n];
+		str[n] = temp;
+	}
+
+	//
+	private List<char[]> permute2(List<char[]> list, char s) {
+		List<char[]> list2 = new ArrayList<>();
+		for (int i = 0; i < list.size(); i++) {
+			int length = list.get(i).length + 1;
+			char[] str = list.get(i);
+			for (int j = 0; j < length; j++) {
+				char[] strs = new char[length];
+				strs[j] = s;
+				int k = 0;
+				for (int m = 0; m < length; m++) {
+					if (m != j) {
+						strs[m] = str[k];
+						k++;
+					}
+				}
+				list2.add(strs);
+			}
+		}
+		// System.out.println(list2);
+		return list2;
+	}
+
 	/**
-	 * 字符排序（不含有相同的字符） 通过循环的方式
+	 * 字符排序 通过循环的方式
+	 * 
 	 * @author:liyiming
 	 * @date:2018年7月11日
 	 * @Description:
 	 * @param str
 	 */
 	public void permuteByLoop(String str) {
-		String strc = str + str.substring(0, str.length() - 1);
-		System.out.println(strc);
-		List<String> set = new ArrayList<String>();
-		for (int j = 0; j < strc.length(); j++) {
-			String first = String.valueOf(strc.charAt(j));
-			for (int i = j+1; i < str.length()+j && j<str.length(); i++) {
-				String cur = String.valueOf(strc.charAt(i));
-					set.add(first + cur);
-			}
-/*			System.out.println("一："+set);
-			Iterator<String> iterator = set.iterator();
-			HashSet<String> setSub = new HashSet<String>();
-			while(iterator.hasNext()) {
-				String s = iterator.next();
-				if(!s.contains(first)) {
-					iterator.remove();
-					setSub.add(s+first);
-					setSub.add(first+s);
-				}
-			}
-			set.addAll(setSub);*/
-			System.out.println("二："+set);
+		char[] strc = str.toCharArray();
+		char[] strs = new char[]{strc[0]};
+		List<char[]> list = new ArrayList<>();
+		list.add(strs);
+		for (int i = 1; i < strc.length; i++) {
+			list = permute2(list, strc[i]);
 		}
-		//System.out.println(set);
-	} 
+		for (char[] c : list) {
+			System.out.print(new String(c));
+			System.out.print(" ");
+		}
+		System.out.println();
+		System.out.println("一共组合：" + list.size());
+	}
 }
