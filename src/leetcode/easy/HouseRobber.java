@@ -49,7 +49,7 @@ public class HouseRobber{
 		// int nums[] = new int[]{1,1,1,1};
 		// [1,3,1,3,100]
 		int nums[] = new int[]{1, 3, 1, 3, 100};
-		System.out.println(rob(nums));
+		System.out.println(rob2(nums));
 	}
 
 	public static int rob(int[] nums) {
@@ -82,7 +82,7 @@ public class HouseRobber{
 		return a >= b ? a : b;
 	}
 
-	public int rob2(int[] nums) {
+	public static int rob2(int[] nums) {
 		int prev = 0, curr = 0;
 		for (int n : nums) {
 			int tmp = curr;
