@@ -3,7 +3,9 @@
 * @date:2018年6月27日
 * Description:
 **/
-package leetcode.easy;
+package leetcode.easy.tree;
+
+import leetcode.easy.TreeNode;
 
 /**
  * Title: DiameterOfBinaryTree Description: Company:pusense
