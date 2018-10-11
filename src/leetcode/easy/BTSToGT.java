@@ -9,6 +9,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+import leetcode.TreeNode;
+
 /**
  * Title: BTSToGT N538 Description: Company:pusense 给定一个二叉搜索树(B树)（Binary Search
  * Tree），把它转换成为累加树（Greater Tree)，使得每个节点的值是原来的节点值加上所有大于它的节点值之和。

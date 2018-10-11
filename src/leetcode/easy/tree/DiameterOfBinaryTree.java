@@ -5,7 +5,7 @@
 **/
 package leetcode.easy.tree;
 
-import leetcode.easy.TreeNode;
+import leetcode.TreeNode;
 
 /**
  * Title: DiameterOfBinaryTree Description: Company:pusense

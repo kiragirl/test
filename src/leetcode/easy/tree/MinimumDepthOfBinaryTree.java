@@ -3,7 +3,7 @@ package leetcode.easy.tree;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
-import leetcode.easy.TreeNode;
+import leetcode.TreeNode;
 /**
  * 111. 二叉树的最小深度
  * @author yiming.li

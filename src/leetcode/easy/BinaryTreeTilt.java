@@ -5,6 +5,8 @@
 **/
 package leetcode.easy;
 
+import leetcode.TreeNode;
+
 /**
  * Title: BinaryTreeTilt Description: Company:pusense
  * 

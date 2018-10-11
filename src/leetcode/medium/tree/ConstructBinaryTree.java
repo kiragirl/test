@@ -7,7 +7,7 @@ package leetcode.medium.tree;
 
 import java.util.Arrays;
 
-import leetcode.easy.TreeNode;
+import leetcode.TreeNode;
 
 /**
  * Title: ConstructBinaryTree Description:根据一棵树的中序遍历与后序遍历构造二叉树。

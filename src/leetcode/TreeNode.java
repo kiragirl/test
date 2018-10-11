@@ -3,7 +3,7 @@
 * @date:2018年5月8日
 * Description:
 **/
-package leetcode.easy;
+package leetcode;
 
 /**
  * Title: TreeNode Description: Company:pusense
@@ -13,7 +13,7 @@ package leetcode.easy;
  **/
 public class TreeNode{
 
-	int val;
+	public int val;
 	public TreeNode left;
 	public TreeNode right;
 

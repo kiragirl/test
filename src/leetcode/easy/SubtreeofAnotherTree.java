@@ -5,6 +5,7 @@
 **/
 package leetcode.easy;
 
+import leetcode.TreeNode;
 
 /**
 * 	Title: SubtreeofAnotherTree

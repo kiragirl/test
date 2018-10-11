@@ -8,6 +8,8 @@ package leetcode.easy;
 import java.util.LinkedList;
 import java.util.Queue;
 
+import leetcode.TreeNode;
+
 /**
  * Title: IsSymmetric Description: Company:pusense 理解为有两组二叉树
  * 
