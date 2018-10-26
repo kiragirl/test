@@ -1,6 +1,6 @@
 /**
  * @author:liyiming
- * @date:2017年4月27日
+ * @date:2017骞�4鏈�27鏃�
  * Description:
  **/
 package test;
@@ -30,15 +30,15 @@ import com.sun.xml.internal.bind.v2.runtime.unmarshaller.XsiNilLoader.Array;
 /**
  * Title: TestDoubleSub Description: Company:pusense
  * 
- * @author ：lyiming
- * @date ：2017年4月27日
+ * @author 锛歭yiming
+ * @date 锛�2017骞�4鏈�27鏃�
  **/
 public class TestDoubleSub{
 
 	// private ThreadLocal<T>
 	/**
 	 * @author:liyiming
-	 * @date:2017年4月27日
+	 * @date:2017骞�4鏈�27鏃�
 	 * @Description:
 	 * @param args
 	 */
@@ -65,23 +65,23 @@ public class TestDoubleSub{
 
 	static void testTreeSet() {
 		TreeSet<Integer> nums = new TreeSet<Integer>();
-		// 向TreeSet中添加四个Integer对象
+		// 鍚慣reeSet涓坊鍔犲洓涓狪nteger瀵硅薄
 		nums.add(5);
 		nums.add(2);
 		nums.add(10);
 		nums.add(-9);
 		nums.add(2);
-		// 输出集合元素，看到集合元素已经处于排序状态
+		// 杈撳嚭闆嗗悎鍏冪礌锛岀湅鍒伴泦鍚堝厓绱犲凡缁忓浜庢帓搴忕姸鎬�
 		System.out.println(nums);
-		// 输出集合里的第一个元素
+		// 杈撳嚭闆嗗悎閲岀殑绗竴涓厓绱�
 		System.out.println(nums.first());
-		// 输出集合里的最后一个元素
+		// 杈撳嚭闆嗗悎閲岀殑鏈�鍚庝竴涓厓绱�
 		System.out.println(nums.last());
-		// 返回小于4的子集，不包含4
+		// 杩斿洖灏忎簬4鐨勫瓙闆嗭紝涓嶅寘鍚�4
 		System.out.println(nums.headSet(4));
-		// 返回大于5的子集，如果Set中包含5，子集中还包含5
+		// 杩斿洖澶т簬5鐨勫瓙闆嗭紝濡傛灉Set涓寘鍚�5锛屽瓙闆嗕腑杩樺寘鍚�5
 		System.out.println(nums.tailSet(5));
-		// 返回大于等于-3，小于4的子集。
+		// 杩斿洖澶т簬绛変簬-3锛屽皬浜�4鐨勫瓙闆嗐��
 		System.out.println(nums.subSet(-3, 4));
 	}
 
@@ -99,24 +99,24 @@ public class TestDoubleSub{
 		System.out.println(aa.codePointAt(11));
 	}
 
-	public static void test啥是BMP代码点() {
+	public static void test() {
 		int a = -10;
 		System.out.println(Character.isBmpCodePoint(a));
 		System.out.println(a >>> 16);
 		System.out.println(Integer.toBinaryString(a));
 		System.out.println(Integer.toBinaryString(10));
 		System.out.println(a);
-		System.out.println("test啥是BMP代码点结束");
+		System.out.println("test鍟ユ槸BMP浠ｇ爜鐐圭粨鏉�");
 
 	}
 
 	public static void testUTF8toGBK() throws UnsupportedEncodingException {
-		String aa = "哈哈哈";
+		String aa = "鍝堝搱鍝�";
 		System.out.println(aa.getBytes().length);
 		System.out.println(aa.getBytes("GBK").length);
 	}
 
-	public static void test位移() {
+	public static void test浣嶇Щ() {
 		int a = 10;
 		System.out.println(a);
 		System.out.println(Integer.toBinaryString(a));
@@ -130,7 +130,7 @@ public class TestDoubleSub{
 		System.out.println(a);
 		System.out.println(Integer.toBinaryString(a));
 
-		System.out.println("test位移结束");
+		System.out.println("test浣嶇Щ缁撴潫");
 	}
 
 	public void testInterface() {
@@ -197,7 +197,7 @@ public class TestDoubleSub{
 
 		/**
 		 * @author:liyiming
-		 * @date:2017年9月28日
+		 * @date:2017骞�9鏈�28鏃�
 		 * @Description:
 		 */
 		@Override
