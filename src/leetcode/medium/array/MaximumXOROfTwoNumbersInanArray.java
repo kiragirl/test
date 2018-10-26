@@ -27,7 +27,7 @@ public class MaximumXOROfTwoNumbersInanArray {
 
 	/**
 	 * 最大两个数的和 可以动态规划 异或可不可动态规划
-	 * 
+	 *  并不可以
 	 * @return
 	 */
 	public int findMaximumSum(int[] nums) {
