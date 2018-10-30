@@ -13,7 +13,7 @@ package leetcode.easy;
  **/
 public class ListNode{
 
-	int val;
+	public int val;
 	public ListNode next;
 
 	public ListNode(int x) {
