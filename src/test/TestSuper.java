@@ -16,6 +16,3 @@ package test;
 public class TestSuper{
 
 }
-class child{
-	
-}
