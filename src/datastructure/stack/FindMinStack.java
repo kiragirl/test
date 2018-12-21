@@ -1,6 +1,5 @@
 package datastructure.stack;
 
-import java.util.LinkedList;
 /**
  * 算法与数据结构 69页，题3.25
  * 提出一种数据结构支持栈push和pop操作以及第三种操作findMin，它返回该数据结构中的最小元素。所有操作均以O(1)的最坏时间运行
