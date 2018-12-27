@@ -1,5 +1,7 @@
 package datastructure.tree;
 
+import datastructure.UnderflowException;
+
 public class BinarySearchTree<T extends Comparable<? super T>> {
 
 	private static class BinaryNode<T> {

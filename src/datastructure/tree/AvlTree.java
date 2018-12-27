@@ -1,6 +1,6 @@
 package datastructure.tree;
 
-import javax.swing.text.DefaultEditorKit.InsertBreakAction;
+import leetcode.TreeNode;
 
 public class AvlTree<AnyType extends Comparable<? super AnyType>> {
 	private static final int ALLOWED_IMBALANCE = 1;
@@ -37,7 +37,7 @@ public class AvlTree<AnyType extends Comparable<? super AnyType>> {
 		remove(x,this.node);
 	}
 	public void insert(AnyType x){
-		
+		this.node = insert(x,this.node);
 	}
 	private AvLNode<AnyType> insert(AnyType x, AvLNode<AnyType> t) {
 		if (t == null) {
@@ -128,5 +128,18 @@ public class AvlTree<AnyType extends Comparable<? super AnyType>> {
 	private AvLNode<AnyType> doubelWithRightChild(AvLNode<AnyType> k3) {
 		k3.right = rotateWithLeftChild(k3.right);
 		return rotateWithLeftChild(k3);
+	}
+	
+	@Override
+	public String toString() {
+		return toStringRecursion(this.node);
+	}
+	
+	private String toStringRecursion(AvLNode<AnyType> node) {
+		if(null == node) {
+			return "null";
+		}
+		String ss = "{"+toStringRecursion(node.left)+"{"+node.element+"}"+toStringRecursion(node.right)+"}";
+		return ss;
 	}
 }
