@@ -193,9 +193,20 @@ public class SeparateChainingHashTable<AnyType>
         final int GAP  =   37;
 
         System.out.println( "Checking... (no more output means success)" );
-
-        for( int i = GAP; i != 0; i = ( i + GAP ) % NUMS )
-            H.insert( i );
+        System.out.println(37*NUMS);
+        System.out.println(74%NUMS);
+        System.out.println(74000000%NUMS);
+        int count=0;
+        for( int i = GAP; i != 0; i = ( i + GAP ) % NUMS ){
+        	H.insert( i );
+        	count++;
+        	if(count == 1999999){
+        		System.out.println(count);
+        	}
+        }
+        System.out.println(count);
+        System.out.println(H.currentSize);
+        System.out.println(H.theLists.length);
         for( int i = 1; i < NUMS; i+= 2 )
             H.remove( i );
 

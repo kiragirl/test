@@ -3,7 +3,9 @@ package datastructure.hash;
 import java.util.LinkedList;
 import java.util.List;
 
+
 public class SeparateChainingHashTable<AnyType> {
+	
 	private static final int DEFAULT_TABLE_SIZE = 101;
 	private List<AnyType>[] theLists;
 
