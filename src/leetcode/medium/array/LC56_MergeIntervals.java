@@ -1,9 +1,9 @@
 package leetcode.medium.array;
 
+import leetcode.Interval;
+
 import java.util.ArrayList;
 import java.util.List;
-
-import leetcode.Interval;
 
 /**
  * 56. 合并区间

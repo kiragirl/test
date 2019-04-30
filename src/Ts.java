@@ -1,6 +1,5 @@
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
 import java.util.Date;
 
 
@@ -21,10 +20,10 @@ public class Ts {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		System.out.println(String.valueOf(((new Date()).getTime()-date.getTime())/1000));
+        System.out.println(((new Date()).getTime() - date.getTime()) / 1000);
 		
 		System.out.println(Math.random()*1000);
-		System.out.println(new Date(1491545794546L));;
+        System.out.println(new Date(1491545794546L));
 	/*	 Calendar cal = Calendar.getInstance();
 	        cal.setTime(new Date());
 	        System.out.println(cal.getTime());

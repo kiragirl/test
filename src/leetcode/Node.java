@@ -1,7 +1,5 @@
 package leetcode;
 
-import leetcode.easy.ListNode;
-
 /**
  * 包含子表得双向链表
  * @author yiming.li

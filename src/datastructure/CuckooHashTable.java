@@ -1,6 +1,4 @@
 package datastructure;
-import java.util.Random;
-
 // Cuckoo Hash table class
 //
 // CONSTRUCTION: a hashing function family and

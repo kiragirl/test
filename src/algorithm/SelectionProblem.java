@@ -5,8 +5,6 @@
 **/
 package algorithm;
 
-import java.util.Arrays;
-
 /**
  * @Title: SelectionProblem 设有一组N个数而要确定其中第k个最大者，称之为选择为题（selection problem）
  * @Description:data structures and algorithm analysis chapter 1 practice 1.1

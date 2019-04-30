@@ -1,7 +1,5 @@
 package leetcode.medium.array;
 
-import java.util.Arrays;
-
 /**
  * 
  * @author yiming.li 518. 零钱兑换 II
@@ -21,7 +19,7 @@ public class CoinChange2 {
 	}
 
 	public int change(int amount, int[] coins) {
-		int dp[] = new int[amount + 1];
+        int[] dp = new int[amount + 1];
 		dp[0] = 1;
 		for (int i = 0; i < coins.length; i++) {
 			int coin = coins[i];
@@ -35,7 +33,7 @@ public class CoinChange2 {
 		return dp[dp.length - 1];
 	}
 
-	public int binarySearch2(int nums[], int l, int r, int x) {
+    public int binarySearch2(int[] nums, int l, int r, int x) {
 		while (r >= l && r < nums.length) {
 			int mid = (l + r) / 2;
 

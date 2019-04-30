@@ -1,7 +1,5 @@
 package datastructure.tree;
 
-import leetcode.TreeNode;
-
 public class AvlTree<AnyType extends Comparable<? super AnyType>> {
 	private static final int ALLOWED_IMBALANCE = 1;
 

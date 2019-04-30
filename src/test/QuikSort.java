@@ -5,8 +5,6 @@
  **/
 package test;
 
-import java.util.Arrays;
-
 /**
  * Title: QuikSort Description: Company:pusense
  * 
@@ -17,11 +15,12 @@ public class QuikSort{
 	public static void main(String[] args)
 	{
 		QuikSort quikSort = new QuikSort();
-		int arr[] = {7,8,1,5,4,3,9,54,2,578,25,36,14,47,58,69,36,26,85,95,15,96,47,12};
+        int[] arr = {7, 8, 1, 5, 4, 3, 9, 54, 2, 578, 25, 36, 14, 47, 58, 69, 36, 26, 85, 95, 15, 96, 47, 12};
 		System.out.println(arr.length);
 		//quikSort.sort(arr, 0, arr.length-1);
 	}
-	public void sort(int arr[], int low, int high) {
+
+    public void sort(int[] arr, int low, int high) {
 		int l = low;
 		int h = high;
 		int povit = arr[low];

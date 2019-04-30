@@ -1,13 +1,9 @@
-
-import java.io.IOException;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 /**
  * 请求富友工具类 Title: FuiouOperationUtil Description: Company:pusense
@@ -24,11 +20,8 @@ public class FuiouOperationUtil{
 	}
 
 	public static boolean isEmpty(String value) {
-		if (value == null || value.length() == 0) {
-			return true;
-		}
+		return value == null || value.length() == 0;
 
-		return false;
 	}
 
 	private static String getMethodName(String fildeName) {
@@ -70,7 +63,7 @@ public class FuiouOperationUtil{
 		for (String ss : arrayToSort) {
 			String val = null;
 			try {
-				Method m = (Method) clz.getMethod("get" + getMethodName(ss));
+				Method m = clz.getMethod("get" + getMethodName(ss));
 				val = (String) m.invoke(ReqData);
 			} catch (IllegalAccessException e) {
 				e.printStackTrace();

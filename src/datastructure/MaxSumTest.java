@@ -1,6 +1,4 @@
 package datastructure;
-import java.util.Random;
-
 // This includes additional code not in the text that keeps
 // track of the starting and ending points of best sequence
 
@@ -187,7 +185,9 @@ public final class MaxSumTest
      */
     public static void main( String [ ] args )
     {
-        int a[ ] = { 4, -3, 5, -2, -1, 2, 6, -2 };
+        int a] ={
+        4, -3, 5, -2, -1, 2, 6, -2
+    } ;
         int maxSum;
 
 

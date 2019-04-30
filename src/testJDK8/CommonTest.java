@@ -5,10 +5,6 @@
 **/
 package testJDK8;
 
-import java.util.Date;
-
-
-
 /**
  * 	Title: CommonTest
  *	Description:

@@ -7,11 +7,8 @@ package test;
 
 import java.util.ArrayList;
 import java.util.Comparator;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Random;
-import java.util.Set;
-import java.util.stream.Collectors;
 
 /**
  * Title: LambdaTest Description: Company:pusense
@@ -177,5 +174,5 @@ class Box{
 }
 
 enum Color {
-	WHITE, GREEN, BLACK, BLUE, RED;
+	WHITE, GREEN, BLACK, BLUE, RED
 }

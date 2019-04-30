@@ -6,9 +6,7 @@
 package leetcode.easy;
 
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
-import java.util.Set;
 
 /**
  * Title: ContainsDuplicate2 Description:给定一个整数数组和一个整数 k，判断数组中是否存在两个不同的索引 i 和
@@ -41,7 +39,7 @@ public class ContainsDuplicate2{
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		 int nums[] = new int[]{1, 2, 3, 1};
+        int[] nums = new int[]{1, 2, 3, 1};
 		// int nums[] = new int[]{1,2,1};
 		// int nums[] = new int[]{-1, -1};
 		// int nums[] = new int[]{};

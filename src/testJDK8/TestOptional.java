@@ -5,9 +5,6 @@
 **/
 package testJDK8;
 
-import java.util.Optional;
-
-
 /**
  * 	Title: TestOptional
  *	Description:

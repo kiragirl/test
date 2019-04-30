@@ -5,11 +5,9 @@
 **/
 package leetcode.easy;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-
 import leetcode.TreeNode;
+
+import java.util.HashMap;
 
 /**
  * Title: BTSToGT N538 Description: Company:pusense 给定一个二叉搜索树(B树)（Binary Search

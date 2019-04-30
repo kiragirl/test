@@ -1,6 +1,5 @@
 package leetcode.easy.array;
 
-import java.util.HashMap;
 import java.util.HashSet;
 
 /**

@@ -1,9 +1,9 @@
 package leetcode.easy.tree;
 
+import leetcode.TreeNode;
+
 import java.util.ArrayList;
 import java.util.List;
-
-import leetcode.TreeNode;
 
 /**
  * Given a binary search tree (BST) with duplicates, find all the mode(s) (the most frequently occurred element) in the given BST.

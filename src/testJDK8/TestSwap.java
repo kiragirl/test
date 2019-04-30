@@ -5,11 +5,6 @@
  **/
 package testJDK8;
 
-import java.util.Collection;
-import java.util.Collections;
-
-import javafx.print.Collation;
-
 /**
  * Title: TestSwap Description: Company:pusense
  * 

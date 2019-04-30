@@ -1,4 +1,4 @@
-package datastructure;import java.util.Random;
+package datastructure;
 
 public class StringHashFamily implements HashFamily<String>
 {
