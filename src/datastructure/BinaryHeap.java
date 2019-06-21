@@ -164,7 +164,7 @@ public class BinaryHeap<AnyType extends Comparable<? super AnyType>>
         // Test program
     public static void main( String [ ] args )
     {
-        int numItems = 10000;
+        int numItems = 100;
         BinaryHeap<Integer> h = new BinaryHeap<>( );
         int i = 37;
 

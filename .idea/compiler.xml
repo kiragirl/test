@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <excludeFromCompile>
+      <file url="file://$PROJECT_DIR$/src/datastructure/StringHashFamily.java" />
+      <file url="file://$PROJECT_DIR$/src/datastructure/CuckooHashTable.java" />
+      <file url="file://$PROJECT_DIR$/src/datastructure/RadixSort.java" />
+      <file url="file://$PROJECT_DIR$/src/datastructure/CuckooHashTableClassic.java" />
+      <file url="file://$PROJECT_DIR$/src/datastructure/MaxSumTest.java" />
+    </excludeFromCompile>
+  </component>
+</project>
