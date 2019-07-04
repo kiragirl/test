@@ -1,6 +1,14 @@
 package datastructure.sort;
 
+import datastructure.PrintUtils;
+
 public class MergeSort implements Sort {
+
+    public static void main(String[] args) {
+        Integer[] a = new Integer[]{34, 8, 64, 51, 32, 21};
+        MergeSort.mergeSort(a);
+        PrintUtils.printArray(a);
+    }
 
     @Override
     public void sort(Comparable[] a) {

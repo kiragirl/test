@@ -203,7 +203,7 @@ public final class Sort {
     }
 
     /**
-     * Internal quicksort method that makes recursive calls.
+     * Internal quickSort method that makes recursive calls.
      * Uses median-of-three partitioning and a cutoff of 10.
      *
      * @param a     an array of Comparable items.
@@ -238,7 +238,7 @@ public final class Sort {
 
     /**
      * Internal insertion sort routine for subarrays
-     * that is used by quicksort.
+     * that is used by quickSort.
      *
      * @param a     an array of Comparable items.
      * @param left  the left-most index of the subarray.
